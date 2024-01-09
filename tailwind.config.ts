@@ -20,6 +20,8 @@ module.exports = {
       // primary: "#4A6CF7",
       primary: "#73b157",
       yellow: "#FBB040",
+      orange: "#f29637",
+      "orange-300": "#fdba74",
       "body-color": "#788293",
       "body-color-dark": "#959CB1",
       "gray-dark": "#1E232E",

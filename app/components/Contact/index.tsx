@@ -9,7 +9,7 @@ const Contact = () => {
           <div className="w-full px-4">
             <ContactFormBox />
           </div>
-          {/* <div className="w-full px-4 lg:w-5/12 xl:w-4/12">
+          {/* <div className="w-full px-4 lg:w-5/12 xl:w-4/12"> bg-gradient-to-t from-primary
             <NewsLatterBox />
           </div> */}
         </div>

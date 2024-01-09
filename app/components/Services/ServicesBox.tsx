@@ -36,20 +36,20 @@ const ServicesBox = ({ service }) => { //product
   };
 
   return (
-    <div className="wow fadeInUp relative z-10 rounded-2xl bg-transparent shadow-three dark:bg-gray-dark dark:shadow-two hover:shadow-2xl hover:shadow-primary dark:hover:shadow-gray-dark" data-wow-delay=".1s "
+    <div className="wow fadeInUp relative z-10 rounded-2xl bg-primary bg-opacity-20 shadow-three dark:bg-gray-dark dark:shadow-two hover:shadow-2xl hover:shadow-white dark:hover:shadow-gray-dark" data-wow-delay=".1s "
     >
       <Image className="w-full rounded-t-2xl" src="/images/hero/hero1.jpg" alt="Sunset in the mountains" width={500}
         height={500} />
       <div className="px-6 py-4">
         <div className="font-bold text-xl mb-2 text-white">{service.title}</div>
-        <p className="text-gray-700 text-base text-body-color-dark">
+        <p className="text-gray-700 text-base text-white font-light">
           {service.comment}
         </p>
       </div>
       <div className="px-6 pt-4 pb-2">
         <button
           onClick={handleSubscription}
-          className="flex  rounded-xl bg-primary p-3 text-base font-semibold text-white transition duration-300 ease-in-out hover:bg-opacity-80 hover:shadow-signUp"
+          className="flex rounded-xl bg-primary p-3 text-base font-semibold text-white transition duration-300 ease-in-out hover:bg-opacity-80 hover:shadow-signUp"
         >
           En savoir plus
         </button>

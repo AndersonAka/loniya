@@ -52,7 +52,14 @@ const Services = () => {
   };
 
   return (
-    <section id="services" className="relative z-10 py-16 bg-bg-color-dark md:py-20 lg:py-28">
+    <section id="services"
+      className="relative z-10 py-16 md:py-20 lg:py-28 "
+      style={{
+        backgroundImage: `url('/images/about/aboutbg.jpg')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+      }}
+    >
       <div className="container">
         <SectionTitle
           title="Nos services"
@@ -61,8 +68,26 @@ const Services = () => {
           width="850px"
           white
         />
-
         <div className="grid grid-cols-1 gap-x-8 gap-y-10 rounded-3xl md:grid-cols-2 lg:grid-cols-3">
+          {/* <div className="wow fadeInUp relative z-10 rounded-2xl bg-white shadow-three dark:bg-gray-dark dark:shadow-two hover:shadow-2xl hover:shadow-primary dark:hover:shadow-gray-dark" data-wow-delay=".1s "
+          >
+            <Image className="w-full rounded-t-2xl" src="/images/hero/hero1.jpg" alt="Sunset in the mountains" width={500}
+              height={500} />
+            <div className="px-6 py-4">
+              <div className="font-bold text-xl mb-2 text-black">Test</div>
+              <p className="text-gray-700 text-base text-bg-color-dark">
+                Test
+              </p>
+            </div>
+            <div className="px-6 pt-4 pb-2">
+              <button
+                // onClick={handleSubscription}
+                className="flex  rounded-xl bg-primary p-3 text-base font-semibold text-white transition duration-300 ease-in-out hover:bg-opacity-80 hover:shadow-signUp"
+              >
+                En savoir plus
+              </button>
+            </div>
+          </div > */}
           {servicesTab && servicesTab.map((serv) => (
             <ServicesBox key={serv.id} service={serv} />
           ))
@@ -70,7 +95,7 @@ const Services = () => {
         </div>
       </div>
 
-      <div className="absolute left-0 bottom-0 z-[-1]">
+      {/* <div className="absolute left-0 bottom-0 z-[-1]">
         <svg
           width="239"
           height="601"
@@ -123,8 +148,8 @@ const Services = () => {
             </linearGradient>
           </defs>
         </svg>
-      </div>
-    </section>
+      </div> */}
+    </section >
   );
 };
 
