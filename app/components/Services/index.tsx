@@ -68,7 +68,8 @@ const Services = () => {
           width="850px"
           white
         />
-        <div className="grid grid-cols-1 gap-x-8 gap-y-10 rounded-3xl md:grid-cols-2 lg:grid-cols-3">
+        {/* <div className="grid grid-cols-1 gap-x-14 gap-y-10  justify-center rounded-3xl md:grid-cols-2 lg:grid-cols-3"> */}
+        <div id="moi" className="flex flex-wrap p-4 gap-x-14 gap-y-10 justify-center rounded-xl bg-opacity-40 md:justify-start bg-gray-dark">
           {/* <div className="wow fadeInUp relative z-10 rounded-2xl bg-white shadow-three dark:bg-gray-dark dark:shadow-two hover:shadow-2xl hover:shadow-primary dark:hover:shadow-gray-dark" data-wow-delay=".1s "
           >
             <Image className="w-full rounded-t-2xl" src="/images/hero/hero1.jpg" alt="Sunset in the mountains" width={500}

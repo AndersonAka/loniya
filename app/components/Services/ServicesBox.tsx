@@ -36,7 +36,7 @@ const ServicesBox = ({ service }) => { //product
   };
 
   return (
-    <div className="wow fadeInUp relative z-10 rounded-2xl bg-primary bg-opacity-20 shadow-three dark:bg-gray-dark dark:shadow-two hover:shadow-2xl hover:shadow-white dark:hover:shadow-gray-dark" data-wow-delay=".1s "
+    <div className="wow fadeInUp relative z-10 rounded-2xl bg-primary bg-opacity-20 w-96 shadow-three dark:bg-gray-dark dark:shadow-two hover:shadow-2xl hover:shadow-white dark:hover:shadow-gray-dark" data-wow-delay=".1s "
     >
       <Image className="w-full rounded-t-2xl" src="/images/hero/hero1.jpg" alt="Sunset in the mountains" width={500}
         height={500} />
