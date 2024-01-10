@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
   content: [
     "./app/**/*.{js,ts,jsx,tsx}",
@@ -68,7 +69,15 @@ module.exports = {
       dropShadow: {
         three: "0px 5px 15px rgba(6, 8, 15, 0.05)",
       },
+
+      animation: {
+        wiggle: 'wiggle 1s ease-in-out infinite',
+      },
+
+
     },
   },
-  plugins: [],
+  plugins: [
+
+  ],
 };

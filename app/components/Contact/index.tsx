@@ -3,7 +3,7 @@ import NewsLatterBox from "./NewsLatterBox";
 
 const Contact = () => {
   return (
-    <section id="contact" className="overflow-hidden py-16 md:py-20 lg:py-28">
+    <section id="contact" className="overflow-hidden py-16 md:py-20 lg:py-28 animate__animated animate__fadeInUp animate__delay-2s">
       <div className="container">
         <div className="-mx-4 flex flex-wrap">
           <div className="w-full px-4">

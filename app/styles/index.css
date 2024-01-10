@@ -24,6 +24,7 @@
   input#checkboxLabel:checked ~ .box span {
     @apply opacity-100;
   }
+  
 }
 
 /* Blog Details Style */
@@ -84,3 +85,4 @@ pre {
 .prism-copy-button {
   @apply absolute top-2 right-2 h-[26px] rounded bg-white px-4 text-primary shadow-one;
 }
+

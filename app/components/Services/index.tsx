@@ -4,11 +4,11 @@ import { useEffect, useState } from "react";
 import SectionTitle from "../Common/SectionTitle";
 import ServicesBox from "./ServicesBox";
 import Image from "next/image";
-
 const Services = () => {
   // const [isMonthly, setIsMonthly] = useState(true);
 
   const [products, setProducts] = useState([]);
+
 
   const servicesTab = [
     {
@@ -53,14 +53,14 @@ const Services = () => {
 
   return (
     <section id="services"
-      className="relative z-10 py-16 md:py-20 lg:py-28 "
+      className="relative z-10 py-16 md:py-20 lg:py-28 animate__animated animate__fadeInUp animate__delay-2s"
       style={{
         backgroundImage: `url('/images/about/aboutbg.jpg')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
       }}
     >
-      <div className="container">
+      <div className="containe fadeInUp">
         <SectionTitle
           title="Nos services"
           paragraph="Des solutions clé en main pour vos besoins urgents en matière de cybersécurité"

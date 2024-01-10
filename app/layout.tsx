@@ -9,6 +9,7 @@ import "../app/styles/index.css";
 import "../app/styles/prism-vsc-dark-plus.css";
 import ScrollToTop from './components/ScrollToTop';
 import Footer from './components/Footer';
+import "animate.css"
 
 const inter = Inter({ subsets: ['latin'] })
 

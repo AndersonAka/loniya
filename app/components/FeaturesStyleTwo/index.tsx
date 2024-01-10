@@ -5,7 +5,7 @@ import featuresStyleTwoData from "./featuresStyleTwoData";
 const FeaturesStyleTwo = () => {
   return (
     <>
-      <section id="features" className="py-16 md:py-20 lg:py-28">
+      <section id="features" className="py-16 md:py-20 lg:py-28  animate__animated animate__fadeInUp animate__delay-1s">
         <div className="container">
           <SectionTitle
             title="A propos de Loniya"
