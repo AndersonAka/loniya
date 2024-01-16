@@ -6,6 +6,7 @@ import './globals.css'
 import Header from './components/Header'
 import { useRef } from 'react';
 import "../app/styles/index.css";
+// import "../app/styles/style2.css"
 import "../app/styles/prism-vsc-dark-plus.css";
 import ScrollToTop from './components/ScrollToTop';
 import Footer from './components/Footer';

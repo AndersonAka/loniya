@@ -5,7 +5,7 @@ import featuresStyleTwoData from "./featuresStyleTwoData";
 const FeaturesStyleTwo = () => {
   return (
     <>
-      <section id="features" className="py-16 md:py-20 lg:py-28  animate__animated animate__fadeInUp animate__delay-1s">
+      <section id="features" className="py-16 md:py-20 lg:py-28  animate__animated animate__fadeIn animate__delay-2s">
         <div className="container">
           <SectionTitle
             title="A propos de Loniya"
@@ -14,7 +14,7 @@ const FeaturesStyleTwo = () => {
             width="850px"
           />
 
-          <div className="grid grid-cols-1 gap-x-8 gap-y-14 md:grid-cols-2 lg:grid-cols-3">
+          <div className="grid grid-cols-1 gap-x-8 gap-y-14 md:grid-cols-2 lg:grid-cols-3 animate__animated animate__bounceIn animate__delay-2s">
             {featuresStyleTwoData.map((feature) => (
               <SingleFeatureStyleTwo key={feature.id} feature={feature} />
             ))}

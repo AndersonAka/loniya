@@ -5,42 +5,18 @@ const menuData: Menu[] = [
     id: 1,
     title: "Accueil",
     newTab: false,
-    submenu: [
-      {
-        id: 101,
-        title: "Home Page 1",
-        path: "/",
-        newTab: false,
-      },
-      {
-        id: 102,
-        title: "Home Page 2",
-        path: "/home-2",
-        newTab: false,
-      },
-    ],
+    path: "/",
   },
   {
     id: 2,
     title: "A propos",
-    path: "/about",
+    path: "/#features",
     newTab: false,
   },
-  {
-    id: 33,
-    title: "Blog",
-    path: "/blogs",
-    newTab: false,
-  },
+  ,
   {
     id: 3,
-    title: "Docs",
-    path: "/docs",
-    newTab: false,
-  },
-  {
-    id: 4,
-    title: "Pages",
+    title: "Services",
     newTab: false,
     submenu: [
       {
@@ -105,5 +81,17 @@ const menuData: Menu[] = [
       },
     ],
   },
+  {
+    id: 4,
+    title: "Blog",
+    path: "/blogs",
+    newTab: false,
+  },
+  {
+    id: 5,
+    title: "Contact",
+    path: "/docs",
+    newTab: false,
+  }
 ];
 export default menuData;

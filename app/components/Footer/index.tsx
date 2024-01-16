@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <>
       <footer
-        className="wow fadeInUp relative z-10 bg-gray-dark pt-16 md:pt-20 lg:pt-24"
+        className="wow fadeInUp relative z-10 bg-green-dark pt-16 md:pt-20 lg:pt-24"
         data-wow-delay=".1s"
       >
         <div className="container">
@@ -19,9 +19,9 @@ const Footer = () => {
                   <Image
                     src="/images/logo/logo-2.svg"
                     alt="logo"
-                    className="w-full dark:hidden"
                     width={140}
                     height={30}
+                    className="w-full dark:hidden"
                   />
                   {/* <Image
                     src="/images/logo/logo.svg"
@@ -31,9 +31,8 @@ const Footer = () => {
                     height={30}
                   /> */}
                 </Link>
-                <p className="mb-9 text-base leading-relaxed ext-body-color-dark dark:text-body-color-dark">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Integer lobortis.
+                <p className="mb-9 text-base leading-relaxed text-white dark:text-body-color-dark md:text-xl">
+                  Protégez votre avenir numérique avec notre expertise en cybersécurité.
                 </p>
                 <div className="flex items-center">
                   <a
@@ -42,8 +41,8 @@ const Footer = () => {
                     className="mr-6 text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                   >
                     <svg
-                      width="9"
-                      height="18"
+                      width="15"
+                      height="25"
                       viewBox="0 0 9 18"
                       className="fill-current"
                     >
@@ -202,9 +201,9 @@ const Footer = () => {
           <div className="h-px w-full bg-gradient-to-r from-transparent via-[#D2D8E183] to-transparent dark:via-[#959CB183]"></div>
           <div className="py-8">
             <p className="text-center text-base text-body-color dark:text-white">
-              Crafted by{" "}
-              <a href="https://nextjstemplates.com" rel="nofollow noopener">
-                Next.js Templates
+              Copyright © 2024 Loniya | Design {" "}
+              <a href="/" rel="nofollow noopener">
+                Loniya
               </a>
             </p>
           </div>

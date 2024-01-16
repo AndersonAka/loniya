@@ -27,6 +27,7 @@ module.exports = {
       "body-color-dark": "#959CB1",
       "gray-dark": "#1E232E",
       "gray-light": "#F0F2F9",
+      "green-dark": "#042f2e",
       stroke: "#E3E8EF",
       "stroke-dark": "#353943",
       "bg-color-dark": "#171C28",

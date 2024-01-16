@@ -71,7 +71,7 @@ const ServicesBox = ({ service }) => {
         width={500}
         height={500}
       />
-      <div id="seco" ref={secoRef} style={{
+      <div id="seco" className="flex flex-col justify-evenly" ref={secoRef} style={{
         height: "300px"
       }}>
         <div className="px-6 py-4">
@@ -83,7 +83,7 @@ const ServicesBox = ({ service }) => {
         <div className="px-6 pt-4 pb-2">
           <button
             onClick={handleSubscription}
-            className="flex rounded-xl bg-primary p-3 text-base font-semibold text-white transition duration-300 ease-in-out hover:bg-opacity-80 hover:shadow-signUp hover:motion-safe:animate-wiggle"
+            className="flex rounded-xl bg-primary p-3 text-base font-semibold text-white transition duration-300 ease-in-out hover:bg-opacity-80 hover:shadow-signUp"
           >
             En savoir plus
           </button>
@@ -93,7 +93,7 @@ const ServicesBox = ({ service }) => {
       {isHovered && (
         <div
           id="troi"
-          className="absolute top-0 start-0 w-full bg-primary opacity-50 rounded-2xl"
+          className="absolute top-0 start-0 w-full rounded-2xl glass animate__animated animate__fadeIn"
           style={{ height: "100%", zIndex: -1 }}
 
         ></div>

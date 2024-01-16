@@ -21,13 +21,13 @@ const Hero = () => {
                 className="wow fadeInUp mx-auto max-w-[800px] "
                 data-wow-delay=".2s"
               >
-                <h1 className="mb-5 text-2xl font-bold leading-tight text-gray-light sm:text-3xl sm:leading-tight md:text-5xl md:leading-tight uppercase">
+                <h1 className="mb-5 text-2xl font-medium leading-tight text-gray-light sm:text-5xl sm:leading-tight md:text-4xl md:leading-tight uppercase animate__animated animate__flipInX animate__delay-1s">
                   des professionnels de la cybersecurité
                 </h1>
-                <p className="mb-12 text-base font-extralight !leading-relaxed text-gray-light dark:text-body-color-dark sm:text-lg md:text-xl">
+                <p className="mb-12 text-base font-extralight !leading-relaxed text-gray-light dark:text-body-color-dark sm:text-lg md:text-xl animate__animated animate__fadeIn animate__delay-2s">
                   À l’ère du numérique, les entreprises modernes sont confrontées à un risque croissant de cyberfraude et de cyberattaques. Ces menaces peuvent mettre en péril la disponibilité de vos services et la sécurité de vos données et de celles de vos clients. Cyber Impact dispose d’une équipe d’experts en cybersécurité prêt à vous accompagner et à sécuriser votre système informatique.
                 </p>
-                <div className="flex flex-col  items-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
+                <div className="flex flex-col items-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0 animate__animated animate__fadeIn animate__delay-2s">
                   <Link
                     href="https://nextjstemplates.com/templates/saas-starter-startup"
                     className="rounded-lg bg-primary py-4 px-8 text-base font-semibold text-white duration-300 ease-in-out hover:bg-primary/80 hover:shadow-md"
