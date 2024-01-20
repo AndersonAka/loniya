@@ -24,6 +24,13 @@ export default function RootLayout({
 
   return (
     <html suppressHydrationWarning lang="fr">
+      <head>
+        {/* <link rel="stylesheet" href="animate.css"></link>
+        <script src="js/wow.min.js"></script> */}
+        <script>
+          new WOW().init();
+        </script>
+      </head>
       <body
         ref={contentRef}
         className={`bg-gray-300 ${inter.className}`}>

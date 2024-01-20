@@ -57,47 +57,25 @@ const ServicesBox = ({ service }) => {
     setIsHovered(false);
   };
   return (
-    <div
-      id="prin"
-      className="wow fadeInUp relative z-10 rounded-2xl bg-primary bg-opacity-20 w-96 shadow-three dark:bg-gray-dark dark:shadow-two hover:shadow-2xl hover:shadow-white dark:hover:shadow-gray-dark"
-      data-wow-delay=".1s "
-      onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
-    >
-      <Image
-        className="w-full rounded-t-2xl"
-        src="/images/hero/hero1.jpg"
-        alt="Sunset in the mountains"
-        width={500}
-        height={500}
-      />
-      <div id="seco" className="flex flex-col justify-evenly" ref={secoRef} style={{
-        height: "300px"
-      }}>
-        <div className="px-6 py-4">
-          <div className="font-bold text-xl mb-2 text-white">{service.title}</div>
-          <p className="text-gray-700 text-base text-white font-light">
-            {service.comment}
-          </p>
+    <div>
+      <article className="card">
+        <Image
+          className="card__background"
+          src={service.image}
+          alt="Photo of Cartagena's cathedral at the background and some colonial style houses"
+          width={1920}
+          height={2193}
+        />
+        <div className="card__content | flow">
+          <div className="card__content--container | flow">
+            <h2 className="card__title ">{service.title}</h2>
+            <p className="card__description">
+              {service.comment}
+            </p>
+          </div>
+          <button className="card__button">En savoir plus</button>
         </div>
-        <div className="px-6 pt-4 pb-2">
-          <button
-            onClick={handleSubscription}
-            className="flex rounded-xl bg-primary p-3 text-base font-semibold text-white transition duration-300 ease-in-out hover:bg-opacity-80 hover:shadow-signUp"
-          >
-            En savoir plus
-          </button>
-        </div>
-      </div>
-      {/* La div "troi" qui apparaît au survol avec la même hauteur que la div "seco" */}
-      {isHovered && (
-        <div
-          id="troi"
-          className="absolute top-0 start-0 w-full rounded-2xl glass animate__animated animate__fadeIn"
-          style={{ height: "100%", zIndex: -1 }}
-
-        ></div>
-      )}
+      </article>
     </div>
   );
 };

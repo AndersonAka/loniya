@@ -1,11 +1,22 @@
+"use client"
+
 import SectionTitle from "../Common/SectionTitle";
 import SingleFeatureStyleTwo from "./SingleFeatureStyleTwo";
 import featuresStyleTwoData from "./featuresStyleTwoData";
+import { useEffect } from 'react';
+import WOW from 'wowjs';
+
 
 const FeaturesStyleTwo = () => {
+
+  useEffect(() => {
+    const wow = new WOW.WOW();
+    wow.init();
+  }, []);
+
   return (
     <>
-      <section id="features" className="py-16 md:py-20 lg:py-28  animate__animated animate__fadeIn animate__delay-2s">
+      <section id="features" className="wow fadeIn py-16 md:py-20 lg:py-28" data-wow-duration="2s" data-wow-delay="0.5s">
         <div className="container">
           <SectionTitle
             title="A propos de Loniya"
@@ -14,7 +25,7 @@ const FeaturesStyleTwo = () => {
             width="850px"
           />
 
-          <div className="grid grid-cols-1 gap-x-8 gap-y-14 md:grid-cols-2 lg:grid-cols-3 animate__animated animate__bounceIn animate__delay-2s">
+          <div className="grid grid-cols-1 gap-x-8 gap-y-14 md:grid-cols-2 lg:grid-cols-3">
             {featuresStyleTwoData.map((feature) => (
               <SingleFeatureStyleTwo key={feature.id} feature={feature} />
             ))}

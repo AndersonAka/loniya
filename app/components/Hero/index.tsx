@@ -5,9 +5,9 @@ const Hero = () => {
     <>
       <section
         id="home"
-        className="relative z-10 overflow-hidden bg-white pt-[120px] pb-16 dark:bg-gray-dark md:pt-[150px] md:pb-[120px] xl:pt-[180px] xl:pb-[160px] 2xl:pt-[210px] 2xl:pb-[200px]"
+        className="wow relative z-10 overflow-hidden bg-white pt-[120px] pb-16 dark:bg-gray-dark md:pt-[150px] md:pb-[120px] xl:pt-[180px] xl:pb-[160px] 2xl:pt-[210px] 2xl:pb-[200px]"
         style={{
-          backgroundImage: `url('/images/hero/hero1.jpg')`,
+          backgroundImage: `url('/images/hero/hero3.jpg')`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           height: '100vh',
@@ -25,7 +25,7 @@ const Hero = () => {
                   des professionnels de la cybersecurité
                 </h1>
                 <p className="mb-12 text-base font-extralight !leading-relaxed text-gray-light dark:text-body-color-dark sm:text-lg md:text-xl animate__animated animate__fadeIn animate__delay-2s">
-                  À l’ère du numérique, les entreprises modernes sont confrontées à un risque croissant de cyberfraude et de cyberattaques. Ces menaces peuvent mettre en péril la disponibilité de vos services et la sécurité de vos données et de celles de vos clients. Cyber Impact dispose d’une équipe d’experts en cybersécurité prêt à vous accompagner et à sécuriser votre système informatique.
+                  À l’ère du numérique, les entreprises modernes sont confrontées à un risque croissant de cyberfraude et de cyberattaques. Ces menaces peuvent mettre en péril la disponibilité de vos services et la sécurité de vos données et de celles de vos clients. Loniya dispose d’une équipe d’experts en cybersécurité prêt à vous accompagner et à sécuriser votre système informatique.
                 </p>
                 <div className="flex flex-col items-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0 animate__animated animate__fadeIn animate__delay-2s">
                   <Link

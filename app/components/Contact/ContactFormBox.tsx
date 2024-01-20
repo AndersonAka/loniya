@@ -10,7 +10,9 @@ const ContactFormBox = () => {
       <p className="mb-12 text-base text-body-color dark:text-body-color-dark">
         Notre équipe {'d\'assistance'} vous répondra dès que possible par e-mail.
       </p>
-      <form action="https://formbold.com/s/3ZBJ3" method="POST">
+      {/* FormBold  */}
+      {/* <form action="https://formbold.com/s/3npX1" method="POST"> */}
+      <form action="https://formbold.com/s/3npX1" method="POST">
         <div className="-mx-4 flex flex-wrap">
           <div className="w-full px-4 md:w-1/2">
             <div className="mb-8">
@@ -18,12 +20,14 @@ const ContactFormBox = () => {
                 htmlFor="name"
                 className="mb-3 block text-sm text-dark dark:text-white"
               >
-                Nom
+                Nom et Prénoms
               </label>
               <input
                 type="text"
                 placeholder="Enter votre nom"
                 className="w-full rounded-xl border border-stroke bg-[#f8f8f8] py-3 px-6 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:focus:border-primary dark:focus:shadow-none"
+                name="subject"
+                required
               />
             </div>
           </div>
@@ -39,6 +43,8 @@ const ContactFormBox = () => {
                 type="email"
                 placeholder="Enter votre adresse email"
                 className="w-full rounded-xl border border-stroke bg-[#f8f8f8] py-3 px-6 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:focus:border-primary dark:focus:shadow-none"
+                required
+                name="email"
               />
             </div>
           </div>
@@ -55,6 +61,7 @@ const ContactFormBox = () => {
                 rows={5}
                 placeholder="Enter your Message"
                 className="w-full resize-none rounded-xl border border-stroke bg-[#f8f8f8] py-3 px-6 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:focus:border-primary dark:focus:shadow-none"
+                required
               ></textarea>
             </div>
           </div>
