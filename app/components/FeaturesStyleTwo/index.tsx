@@ -4,14 +4,17 @@ import SectionTitle from "../Common/SectionTitle";
 import SingleFeatureStyleTwo from "./SingleFeatureStyleTwo";
 import featuresStyleTwoData from "./featuresStyleTwoData";
 import { useEffect } from 'react';
+//@ts-ignore
 import WOW from 'wowjs';
-
 
 const FeaturesStyleTwo = () => {
 
   useEffect(() => {
-    const wow = new WOW.WOW();
-    wow.init();
+    // Vérifiez que window est disponible (côté client uniquement)
+    if (typeof window !== 'undefined') {
+      const wow = new WOW.WOW();
+      wow.init();
+    }
   }, []);
 
   return (

@@ -1,4 +1,4 @@
-import { Menu } from "@/types/menu";
+import { Menu } from "@/app/types/menu";
 
 const menuData: Menu[] = [
   {

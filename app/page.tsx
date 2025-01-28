@@ -5,6 +5,7 @@ import Hero from './components/Hero';
 import FeaturesStyleTwo from './components/FeaturesStyleTwo';
 import Services from './components/Services';
 import Contact from './components/Contact';
+import AboutStyleTwo from './components/AboutStyleTwo';
 
 export const metadata: Metadata = {
   title: "Loniya - Accueil",
@@ -17,6 +18,7 @@ export default function Home() {
     <>
       <ScrollUp />
       <Hero />
+      <AboutStyleTwo />
       <FeaturesStyleTwo />
       <Services />
       <Contact />

@@ -1,4 +1,4 @@
-import { Feature } from "@/types/feature";
+import { Feature } from "@/app/types/feature";
 
 const featuresStyleTwoData: Feature[] = [
   {

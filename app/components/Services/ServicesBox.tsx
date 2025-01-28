@@ -44,7 +44,7 @@ const ServicesBox = ({ service }) => {
     //   }
     // );
 
-    window.location.assign(data);
+    // window.location.assign(data);
   };
   const handleMouseEnter = () => {
     setIsHovered(true);
