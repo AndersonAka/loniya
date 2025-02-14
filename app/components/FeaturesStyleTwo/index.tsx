@@ -20,12 +20,14 @@ const FeaturesStyleTwo = () => {
   return (
     <section className="wow fadeIn relative z-10 py-16 md:py-20 lg:py-28 bg-white dark:bg-gray-dark overflow-hidden">
       <div className="container">
-        <SectionTitle
-          title="À propos de Loniya"
-          paragraph="Loniya déploie les technologies qui accélèrent le développement de ses clients et les aident à réaliser leur vision de l&apos;entreprise du futur."
-          center
-          width="850px"
-        />
+        <div className="max-w-3xl mx-auto text-center mb-16">
+          <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-6 md:text-5xl lg:text-6xl">
+            À propos de nous
+          </h1>
+          <p className="text-lg text-gray-600 text-gray-dark md:text-xl">
+            Ibelio-Cyber déploie les technologies qui accélèrent le développement de ses clients et les aident à réaliser leur vision de l&apos;entreprise du futur.
+          </p>
+        </div>
 
         <div className="grid grid-cols-1 gap-x-8 gap-y-14 md:grid-cols-2 lg:grid-cols-3">
           {featuresStyleTwoData.map((feature) => (

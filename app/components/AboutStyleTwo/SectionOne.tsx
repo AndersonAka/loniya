@@ -16,7 +16,7 @@ const SectionOne = () => {
                 <span className="px-4 py-2 text-sm font-semibold text-primary bg-primary/10 rounded-full">
                   NOS SERVICES
                 </span>
-                <h2 className="mt-4 text-3xl md:text-4xl font-bold text-black dark:text-white">
+                <h2 className="mt-4 text-3xl md:text-4xl font-bold text-heading-color dark:text-heading-color-dark">
                   Des solutions innovantes pour votre entreprise
                 </h2>
               </div>
@@ -37,7 +37,6 @@ const SectionOne = () => {
                 title="Perfectionnez vos approches pour augmenter vos capacités"
                 paragraph="Nous avons pour but de solutionner l&apos;intégralité des problématiques informatiques (IT) des entreprises, en leur offrant l&apos;ensemble des services nécessaires pour améliorer leurs performances et optimiser la structuration de leurs activités."
                 width="570px"
-                mb="44px"
               />
 
               <Link

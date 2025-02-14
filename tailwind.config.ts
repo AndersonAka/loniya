@@ -18,12 +18,14 @@ module.exports = {
       white: "#FFFFFF",
       black: "#121723",
       dark: "#1D2430",
-      // primary: "#4A6CF7",
       primary: "#73b157",
       yellow: "#FBB040",
       orange: "#f29637",
       "orange-300": "#fdba74",
-      "body-color": "#788293",
+      "body-color": {
+        DEFAULT: "#637381",
+        dark: "#AEB7C0",
+      },
       "body-color-dark": "#959CB1",
       "gray-dark": "#1E232E",
       "gray-light": "#F0F2F9",
@@ -31,25 +33,18 @@ module.exports = {
       stroke: "#E3E8EF",
       "stroke-dark": "#353943",
       "bg-color-dark": "#171C28",
+      "heading-color": {
+        DEFAULT: "#212B36",
+        dark: "#F3F4F6",
+      },
     },
     screens: {
       xs: "450px",
-      // => @media (min-width: 450px) { ... }
-
       sm: "575px",
-      // => @media (min-width: 576px) { ... }
-
       md: "768px",
-      // => @media (min-width: 768px) { ... }
-
       lg: "992px",
-      // => @media (min-width: 992px) { ... }
-
       xl: "1200px",
-      // => @media (min-width: 1200px) { ... }
-
       "2xl": "1400px",
-      // => @media (min-width: 1400px) { ... }
     },
     extend: {
       boxShadow: {
@@ -72,13 +67,9 @@ module.exports = {
       },
 
       animation: {
-        wiggle: 'wiggle 1s ease-in-out infinite',
+        wiggle: "wiggle 1s ease-in-out infinite",
       },
-
-
     },
   },
-  plugins: [
-
-  ],
+  plugins: [],
 };

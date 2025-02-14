@@ -11,12 +11,18 @@ const SingleFeatureStyleTwo = ({ feature }: { feature: Feature }) => {
         <div className="mb-10 flex h-[70px] w-[70px] items-center justify-center rounded-2xl bg-gradient-to-r from-primary/20 to-primary/10 text-primary group-hover:from-primary group-hover:to-primary group-hover:text-white transition-all duration-300">
           {icon}
         </div>
-        <h3 className="mb-5 text-2xl font-bold text-black dark:text-white">
+        <h3 className="mb-5 text-2xl font-bold text-gray-900 dark:text-white">
           {title}
         </h3>
-        <p className="text-lg leading-relaxed text-gray-600 dark:text-gray-300">
+        <p className="text-base text-gray-600 dark:text-gray-300">
           {paragraph}
         </p>
+        <a href="#" className="mt-6 inline-flex items-center text-primary hover:text-primary/80 font-semibold transition-colors">
+          En savoir plus
+          <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+          </svg>
+        </a>
       </div>
     </div>
   );

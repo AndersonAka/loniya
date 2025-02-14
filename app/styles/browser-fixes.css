@@ -1,0 +1,64 @@
+/* Firefox */
+@-moz-document url-prefix() {
+  .transform-gpu {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+/* Safari */
+@supports (-webkit-overflow-scrolling: touch) {
+  .transform-gpu {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+/* Edge */
+@supports (-ms-ime-align: auto) {
+  .transform-gpu {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+/* Optimisations pour les animations */
+.wow {
+  will-change: transform, opacity;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+/* Amélioration du rendu des polices */
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) {
+    body {
+      -webkit-font-smoothing: subpixel-antialiased;
+    }
+  }
+}
+
+/* Fix pour les transitions sur Safari */
+.transition-all {
+  -webkit-transition-property: all;
+  transition-property: all;
+}
+
+/* Images et éléments transformés */
+.transform-hardware {
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+.no-select {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}

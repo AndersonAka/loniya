@@ -1,30 +1,33 @@
+import React from "react";
+
 const SectionTitle = ({
   title,
   paragraph,
   width = "570px",
   center,
-  mb = "100px",
-  white
+  white,
 }: {
   title: string;
-  paragraph?: string;
+  paragraph: string;
   width?: string;
   center?: boolean;
-  mb?: string;
-  white?: boolean
+  white?: boolean;
 }) => {
   return (
     <div
-      className={`wow fadeInUp w-full ${center ? "mx-auto text-center" : ""} ${width === "570px" ? "max-w-[570px]" : `max-w-[${width}]`
-        } ${mb === "100px" ? "mb-[100px]" : `mb-[${mb}]`}`}
+      className={`wow fadeInUp w-full ${center ? "mx-auto text-center" : ""} max-w-[${width}]`}
       data-wow-delay=".1s"
     >
-      <h2 className={`mb-4 text-3xl font-light !leading-tight sm:text-5xl md:text-[45px] ${white ? "text-white" : "text-black dark:text-white"
-        }`}>
+      <h2
+        className={`mb-4 text-4xl font-bold !leading-tight md:text-5xl lg:text-6xl ${white ? "text-white" : "text-heading-color dark:text-heading-color-dark"
+          }`}
+      >
         {title}
       </h2>
-      <p className={`text-base font-extralight !leading-relaxed md:text-xl ${white ? "text-white" : "text-body-color dark:text-body-color-dark"
-        }`}>
+      <p
+        className={`text-lg md:text-xl ${white ? "text-white" : "text-body-color dark:text-body-color-dark"
+          }`}
+      >
         {paragraph}
       </p>
     </div>
