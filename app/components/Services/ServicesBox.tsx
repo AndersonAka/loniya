@@ -68,7 +68,7 @@ const ServicesBox = ({ service }) => {
         />
         <div className="card__content | flow">
           <div className="card__content--container | flow">
-            <h2 className="card__title ">{service.title}</h2>
+            <h2 className="card__title text-lg font-bold">{service.title}</h2>
             <p className="card__description">
               {service.comment}
             </p>

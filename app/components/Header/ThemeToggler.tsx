@@ -6,6 +6,8 @@ const ThemeToggler = () => {
     <button
       onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
       className="bg-gray-2 dark:bg-dark-bg flex h-9 w-9 cursor-pointer items-center justify-center rounded-full text-black dark:text-white md:h-14 md:w-14"
+      title="Basculer le thème"
+      aria-label={`Basculer vers le thème ${theme === "dark" ? "clair" : "sombre"}`}
     >
       <svg
         viewBox="0 0 23 23"

@@ -6,72 +6,68 @@ import Image from "next/image";
 const testimonialData: Testimonial[] = [
   {
     id: 1,
-    name: "Musharof Chy",
-    designation: "Founder @TailGrids",
+    name: "Sarah Johnson",
+    designation: "Directrice IT",
+    image: "https://images.unsplash.com/photo-1589156280159-27698a70f29e?auto=format&fit=crop&q=80",
     content:
-      "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
-    image: "/images/testimonials/auth-01.png",
+      "Idelio-cyber a révolutionné notre approche de la sécurité informatique. Leur audit approfondi nous a permis d'identifier des vulnérabilités critiques que nous ignorions. La mise en place de leurs recommandations a considérablement renforcé notre protection.",
     star: 5,
   },
   {
     id: 2,
-    name: "Devid Weilium",
-    designation: "Founder @UIdeck",
+    name: "Marcus Thompson",
+    designation: "Chef de Projet",
+    image: "https://images.unsplash.com/photo-1578635073855-a89b3dd5cc18?auto=format&fit=crop&q=80",
     content:
-      "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
-    image: "/images/testimonials/auth-02.png",
+      "L'accompagnement d'Idelio-cyber dans notre transformation numérique a été exemplaire. Leur expertise technique, combinée à une excellente compréhension de nos enjeux métier, nous a permis de sécuriser l'ensemble de notre infrastructure cloud.",
     star: 5,
   },
   {
     id: 3,
-    name: "Lethium Frenci",
-    designation: "Founder @Lineicons",
+    name: "Michelle Davis",
+    designation: "Responsable Sécurité",
+    image: "https://images.unsplash.com/photo-1531384441138-2736e62e0919?auto=format&fit=crop&q=80",
     content:
-      "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
-    image: "/images/testimonials/auth-03.png",
+      "Les formations dispensées par Idelio-cyber ont eu un impact immédiat sur notre culture de sécurité. Nos employés sont maintenant beaucoup plus vigilants face aux menaces de phishing et appliquent rigoureusement les bonnes pratiques de sécurité.",
     star: 5,
   },
   {
     id: 4,
-    name: "Lethium Frenci",
-    designation: "Founder @Lineicons",
+    name: "David Wilson",
+    designation: "DSI",
+    image: "https://images.unsplash.com/photo-1506634064465-7dab4de896ed?auto=format&fit=crop&q=80",
     content:
-      "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
-    image: "/images/testimonials/auth-03.png",
+      "Grâce à Idelio-cyber, nous avons mis en place une stratégie de cybersécurité robuste et évolutive. Leur support 24/7 et leur réactivité face aux incidents nous donnent une vraie tranquillité d'esprit.",
     star: 5,
   },
 ];
 
 const Testimonials = () => {
   return (
-    <section className="bg-bg-color-dark relative z-10  py-16 md:py-20 lg:py-28">
+    <section className="relative z-10 py-16 md:py-20 lg:py-28 bg-gray-50 dark:bg-gray-900">
       <div className="container">
         <SectionTitle
-          title="What Our Users Says"
-          paragraph="There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
+          title="Ce que disent nos clients"
+          paragraph="Découvrez les retours d&apos;expérience de nos clients sur nos services de cybersécurité"
           center
-          white
+          width="650px"
         />
-        <div className="flex items-center justify-center">
-          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4">
-            {testimonialData.map((testimonial) => (
-              <SingleTestimonial key={testimonial.id} testimonial={testimonial} />
-            ))}
-          </div>
+
+        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
+          {testimonialData.map((testimonial) => (
+            <SingleTestimonial key={testimonial.id} testimonial={testimonial} />
+          ))}
         </div>
-        {/* <div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 lg:grid-cols-3">
-
-        </div> */}
-
       </div>
 
-      <div className="absolute top-5 right-0 z-[-1]">
+      <div className="absolute top-0 right-0 z-[-1] opacity-30">
         <svg
           width="238"
           height="531"
           viewBox="0 0 238 531"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
+          className="dark:opacity-20"
         >
           <rect
             opacity="0.3"

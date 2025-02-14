@@ -14,20 +14,20 @@ const SectionTitle = ({
   white?: boolean
 }) => {
   return (
-    <>
-      <div
-        className={`wow fadeInUp w-full ${center ? "mx-auto text-center" : ""}`}
-        data-wow-delay=".1s"
-        style={{ maxWidth: width, marginBottom: mb }}
-      >
-        <h2 className={`"mb-4 text-3xl font-light !leading-tight sm:text-5xl md:text-[45px]" ${white ? "text-white" : "text-black"}`}>
-          {title}
-        </h2>
-        <p className={`"text-base font-extralight !leading-relaxed md:text-xl" ${white ? "text-white" : "text-black"}`}>
-          {paragraph}
-        </p>
-      </div>
-    </>
+    <div
+      className={`wow fadeInUp w-full ${center ? "mx-auto text-center" : ""} ${width === "570px" ? "max-w-[570px]" : `max-w-[${width}]`
+        } ${mb === "100px" ? "mb-[100px]" : `mb-[${mb}]`}`}
+      data-wow-delay=".1s"
+    >
+      <h2 className={`mb-4 text-3xl font-light !leading-tight sm:text-5xl md:text-[45px] ${white ? "text-white" : "text-black dark:text-white"
+        }`}>
+        {title}
+      </h2>
+      <p className={`text-base font-extralight !leading-relaxed md:text-xl ${white ? "text-white" : "text-body-color dark:text-body-color-dark"
+        }`}>
+        {paragraph}
+      </p>
+    </div>
   );
 };
 

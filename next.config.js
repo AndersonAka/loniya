@@ -7,7 +7,8 @@ const nextConfig = {
             'images.pexels.com',
             'upload.wikimedia.org',
             'encrypted-tbn0.gstatic.com',
-            'www.w3.org'
+            'www.w3.org',
+            'images.unsplash.com'
         ],
     },
 }
