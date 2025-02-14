@@ -11,7 +11,6 @@ import "../app/styles/prism-vsc-dark-plus.css";
 import ScrollToTop from './components/ScrollToTop';
 import Footer from './components/Footer';
 import "animate.css"
-import { ThemeProvider } from "next-themes";
 import "./styles/normalize.css";
 
 const inter = Inter({ subsets: ['latin'] })
@@ -39,26 +38,14 @@ export default function RootLayout({
       </head>
       <body
         ref={contentRef}
-        className="min-h-screen bg-white dark:bg-gray-900 font-sans antialiased"
+        className="min-h-screen bg-white font-sans antialiased"
       >
-        {/* 
-          ThemeProvider configuration:
-          - attribute="class": utilise les classes Tailwind pour le theming
-          - defaultTheme="system": s'adapte aux préférences système
-          - enableSystem={true}: active la détection du thème système
-        */}
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem={true}
-        >
-          <Header />
-          <main className="flex-grow">
-            {children}
-          </main>
-          <Footer />
-          <ScrollToTop />
-        </ThemeProvider>
+        <Header />
+        <main className="flex-grow">
+          {children}
+        </main>
+        <Footer />
+        <ScrollToTop />
       </body>
     </html>
   )

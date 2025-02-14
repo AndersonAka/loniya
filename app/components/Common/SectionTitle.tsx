@@ -19,14 +19,12 @@ const SectionTitle = ({
       data-wow-delay=".1s"
     >
       <h2
-        className={`mb-4 text-4xl font-bold !leading-tight md:text-5xl lg:text-6xl ${white ? "text-white" : "text-heading-color dark:text-heading-color-dark"
-          }`}
+        className={`mb-4 text-4xl font-bold !leading-tight md:text-5xl lg:text-6xl ${white ? "text-white" : "text-heading-color"}`}
       >
         {title}
       </h2>
       <p
-        className={`text-lg md:text-xl ${white ? "text-white" : "text-body-color dark:text-body-color-dark"
-          }`}
+        className={`text-lg md:text-xl ${white ? "text-white" : "text-body-color"}`}
       >
         {paragraph}
       </p>

@@ -11,8 +11,6 @@ import menuData from "./menuData";
 import ThemeToggler from "./ThemeToggler";
 
 const Header = () => {
-  const { theme } = useTheme();
-
   // user data
   // const { data: session, status } = useSession();
 
@@ -53,7 +51,7 @@ const Header = () => {
   return (
     <header
       className={`header top-0 left-0 z-40 w-full ${sticky
-        ? "fixed z-[9999] bg-white/80 shadow-lg backdrop-blur-sm transition dark:bg-gray-900/90"
+        ? "fixed z-[9999] bg-white/80 shadow-lg backdrop-blur-sm transition"
         : "absolute bg-transparent"
         }`}
     >
@@ -66,14 +64,14 @@ const Header = () => {
                 alt="Idelio-cyber"
                 width={160}
                 height={40}
-                className="w-full dark:invert"
+                className="w-full"
               />
             </Link>
           </div>
 
           <div className="flex items-center justify-end">
             <nav
-              className={`absolute right-0 top-full w-full max-w-[250px] rounded-lg bg-white p-4 duration-300 dark:bg-gray-800 lg:static lg:w-full lg:max-w-full lg:bg-transparent lg:p-0 ${navbarOpen
+              className={`absolute right-0 top-full w-full max-w-[250px] rounded-lg bg-white p-4 duration-300 lg:static lg:w-full lg:max-w-full lg:bg-transparent lg:p-0 ${navbarOpen
                 ? "visible opacity-100"
                 : "invisible opacity-0 lg:visible lg:opacity-100"
                 }`}
@@ -85,7 +83,7 @@ const Header = () => {
                       href={menuItem.path || "#"}
                       className={`flex items-center text-base font-medium ${usePathName === menuItem.path
                         ? "text-primary"
-                        : "text-gray-700 hover:text-primary dark:text-gray-200 dark:hover:text-primary"
+                        : "text-gray-700 hover:text-primary"
                         }`}
                     >
                       {menuItem.title}
@@ -107,12 +105,12 @@ const Header = () => {
                     </Link>
 
                     {menuItem.subMenu && (
-                      <div className="absolute left-0 top-full z-40 mt-2 hidden w-[220px] rounded-lg bg-white p-2 shadow-lg dark:bg-gray-800 group-hover:block">
+                      <div className="absolute left-0 top-full z-40 mt-2 hidden w-[220px] rounded-lg bg-white p-2 shadow-lg group-hover:block">
                         {menuItem.subMenu.map((submenu, index) => (
                           <Link
                             key={index}
                             href={submenu.path}
-                            className="block rounded-lg px-4 py-2 text-sm text-gray-600 hover:bg-gray-50 hover:text-primary dark:text-gray-300 dark:hover:bg-gray-700/50"
+                            className="block rounded-lg px-4 py-2 text-sm text-gray-600 hover:bg-gray-50 hover:text-primary"
                           >
                             {submenu.title}
                           </Link>
@@ -124,11 +122,11 @@ const Header = () => {
               </ul>
             </nav>
 
-            <div className="ml-4">
+            {/* <div className="ml-4">
               <ThemeToggler />
-            </div>
+            </div> */}
 
-            <button
+            {/* <button
               onClick={navbarToggleHandler}
               aria-label="Menu principal"
               className="ml-4 inline-flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10 text-primary lg:hidden"
@@ -155,7 +153,7 @@ const Header = () => {
                   />
                 )}
               </svg>
-            </button>
+            </button> */}
           </div>
         </div>
       </div>

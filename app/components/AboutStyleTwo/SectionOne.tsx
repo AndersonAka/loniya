@@ -1,13 +1,11 @@
 "use client";
-import { useTheme } from "next-themes";
 import Image from "next/image";
 import Link from "next/link";
 import SectionTitle from "../Common/SectionTitle";
 
 const SectionOne = () => {
-  const { theme } = useTheme();
   return (
-    <section className="py-16 md:py-20 lg:py-28 bg-gray-50 dark:bg-gray-900">
+    <section className="py-16 md:py-20 lg:py-28 bg-gray-50">
       <div className="container">
         <div className="flex flex-wrap -mx-4">
           <div className="w-full px-4 sm:w-2/5">
@@ -16,7 +14,7 @@ const SectionOne = () => {
                 <span className="px-4 py-2 text-sm font-semibold text-primary bg-primary/10 rounded-full">
                   NOS SERVICES
                 </span>
-                <h2 className="mt-4 text-3xl md:text-4xl font-bold text-heading-color dark:text-heading-color-dark">
+                <h2 className="mt-4 text-3xl md:text-4xl font-bold text-heading-color">
                   Des solutions innovantes pour votre entreprise
                 </h2>
               </div>

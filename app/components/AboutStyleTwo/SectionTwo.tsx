@@ -1,13 +1,11 @@
 "use client";
-import { useTheme } from "next-themes";
 import Image from "next/image";
 import Link from "next/link";
 import SectionTitle from "../Common/SectionTitle";
 
 const SectionTwo = () => {
-  const { theme } = useTheme();
   return (
-    <section className="pb-16 md:pb-20 lg:pb-28 bg-white dark:bg-gray-dark">
+    <section className="pb-16 md:pb-20 lg:pb-28 bg-white">
       <div className="container">
         <div className="flex flex-wrap items-center -mx-4">
           <div className="w-full px-4 lg:w-1/2">
@@ -32,7 +30,7 @@ const SectionTwo = () => {
           </div>
           <div className="w-full px-4 lg:w-1/2">
             <div
-              className="wow fadeInUp transform-hardware relative mx-auto max-w-[465px] overflow-hidden rounded-2xl bg-white p-7 text-center shadow-lg dark:bg-gray-800 dark:shadow-gray-900/30"
+              className="wow fadeInUp transform-hardware relative mx-auto max-w-[465px] overflow-hidden rounded-2xl bg-white p-7 text-center shadow-lg"
               data-wow-delay=".15s"
             >
               <div className="relative aspect-[25/24] transform-gpu">
@@ -48,7 +46,7 @@ const SectionTwo = () => {
                   src="/images/about-2/image-2-light.svg"
                   alt="Notre expertise"
                   fill
-                  className="object-cover transition-opacity duration-300 dark:hidden no-select"
+                  className="object-cover transition-opacity duration-300 no-select"
                   sizes="(max-width: 465px) 100vw, 465px"
                   loading="lazy"
                 />

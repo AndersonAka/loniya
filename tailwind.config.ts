@@ -22,21 +22,14 @@ module.exports = {
       yellow: "#FBB040",
       orange: "#f29637",
       "orange-300": "#fdba74",
-      "body-color": {
-        DEFAULT: "#637381",
-        dark: "#AEB7C0",
-      },
-      "body-color-dark": "#959CB1",
+      "body-color": "#637381",
       "gray-dark": "#1E232E",
       "gray-light": "#F0F2F9",
       "green-dark": "#042f2e",
       stroke: "#E3E8EF",
       "stroke-dark": "#353943",
       "bg-color-dark": "#171C28",
-      "heading-color": {
-        DEFAULT: "#212B36",
-        dark: "#F3F4F6",
-      },
+      "heading-color": "#212B36",
     },
     screens: {
       xs: "450px",
