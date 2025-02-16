@@ -15,7 +15,7 @@ import Testimonials from './components/Testimonials';
 // const Testimonials = dynamic(() => import('@/components/Testimonials'), { ssr: false });
 
 export const metadata: Metadata = {
-  title: "Loniya - Experts en Cybersécurité",
+  title: "Ibelio-Cyber - Experts en Cybersécurité",
   description: "Solutions de cybersécurité sur mesure pour protéger votre entreprise",
 };
 
@@ -24,8 +24,8 @@ export default function Home() {
     <>
       <ScrollUp />
       <Hero />
-      <AboutStyleTwo />
       <FeaturesStyleTwo />
+      <AboutStyleTwo />
       <Services />
       <Testimonials />
     </>

@@ -65,7 +65,7 @@
   @apply mb-2 text-base text-body-color;
 }
 .blog-details blockquote {
-  @apply relative z-10 mb-10 overflow-hidden rounded-sm bg-gray-light p-8 dark:bg-gray-dark md:py-9 lg:px-10 xl:px-32 text-center text-base font-medium italic text-black;
+  @apply relative z-10 mb-10 overflow-hidden rounded-sm bg-gray-light p-8  md:py-9 lg:px-10 xl:px-32 text-center text-base font-medium italic text-black;
 }
 
 .blog-details blockquote::after {
@@ -74,11 +74,11 @@
 }
 .blog-details blockquote::before {
   content: "";
-  @apply absolute left-0 top-0 w-[140px] h-[106px] bg-[url(/images/blog/quote-shape-1.svg)] dark:bg-[url(/images/blog/quote-shape-1-dark.svg)] bg-no-repeat bg-contain bg-left-top;
+  @apply absolute left-0 top-0 w-[140px] h-[106px] bg-[url(/images/blog/quote-shape-1.svg)]  bg-no-repeat bg-contain bg-left-top;
 }
 
 pre {
-  @apply relative bg-stroke-dark px-4 py-2 rounded-lg mb-2;
+  @apply relative px-4 py-2 rounded-lg mb-2;
 }
 
 .prism-copy-button {

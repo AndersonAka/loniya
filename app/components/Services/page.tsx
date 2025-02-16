@@ -4,8 +4,8 @@ import SectionTitle from "../Common/SectionTitle";
 
 const Services = () => {
     return (
-        <section className="py-20 lg:py-32 bg-white dark:bg-gray-dark">
-            <div className="container">
+        <section className="py-20 lg:py-32 bg-white">
+            <div className="container ">
                 <SectionTitle
                     title="Nos Services"
                     paragraph="Solutions de cybersécurité sur mesure pour protéger votre entreprise"

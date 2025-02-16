@@ -11,9 +11,9 @@ const SectionOne = () => {
           <div className="w-full px-4 sm:w-2/5">
             <div className="wow fadeInUp" data-wow-delay=".15s">
               <div className="mb-8">
-                <span className="px-4 py-2 text-sm font-semibold text-primary bg-primary/10 rounded-full">
+                {/* <span className="px-4 py-2 text-sm font-semibold text-primary bg-primary/10 rounded-full">
                   NOS SERVICES
-                </span>
+                </span> */}
                 <h2 className="mt-4 text-3xl md:text-4xl font-bold text-heading-color">
                   Des solutions innovantes pour votre entreprise
                 </h2>
@@ -38,7 +38,7 @@ const SectionOne = () => {
               />
 
               <Link
-                href="/about"
+                href="/services"
                 className="inline-block px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out rounded-lg bg-primary hover:bg-primary/90 hover:shadow-lg hover:-translate-y-1"
               >
                 En savoir plus

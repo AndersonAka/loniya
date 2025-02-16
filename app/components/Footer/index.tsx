@@ -2,6 +2,7 @@
 import { useTheme } from "next-themes";
 import Image from "next/image";
 import Link from "next/link";
+import { siteConfig } from "../../config/site";
 
 const Footer = () => {
   const { theme } = useTheme();
@@ -30,18 +31,18 @@ const Footer = () => {
             <div className="mb-12 max-w-[360px] lg:mb-16">
               <Link href="/" className="mb-8 inline-block">
                 <Image
-                  src="/next.svg"
-                  alt="Loniya"
+                  src="/images/logo/logo-2.svg"
+                  alt={siteConfig.name}
+                  className="w-full dark:hidden"
                   width={140}
                   height={30}
-                  className="w-full brightness-0 invert"
                 />
               </Link>
               <h2 className="text-3xl font-bold leading-tight text-white mb-4 sm:text-4xl sm:leading-tight lg:text-5xl lg:leading-tight">
                 Votre partenaire en <span className="text-primary">cybersécurité</span>
               </h2>
-              <p className="mb-9 text-lg text-white/90 sm:text-xl lg:text-2xl font-light">
-                Experts dédiés à la protection de vos données et systèmes informatiques. Nous assurons la sécurité numérique de votre entreprise.
+              <p className="mb-9 text-base font-medium leading-relaxed text-body-color">
+                {siteConfig.description}
               </p>
               <div className="flex items-center space-x-4">
                 <Link
@@ -97,7 +98,7 @@ const Footer = () => {
                   <svg className="w-5 h-5 mr-3 text-primary group-hover:scale-110 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                   </svg>
-                  <span className="text-lg group-hover:text-primary transition-colors duration-300 font-medium">contact@loniya.fr</span>
+                  <span className="text-lg group-hover:text-primary transition-colors duration-300 font-medium">contact@ibeliocyber.fr</span>
                 </li>
                 <li className="flex items-center text-white/90 group">
                   <svg className="w-5 h-5 mr-3 text-primary group-hover:scale-110 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -115,7 +116,7 @@ const Footer = () => {
 
         <div className="py-8">
           <p className="text-center text-white/80 font-medium text-lg">
-            © {new Date().getFullYear()} Loniya | Protection et sécurité numérique
+            © {new Date().getFullYear()} {siteConfig.name} | Protection et sécurité numérique
           </p>
         </div>
       </div>

@@ -13,17 +13,17 @@ const SingleTestimonial = ({ testimonial }: { testimonial: Testimonial }) => {
 
   return (
     <div className="w-full">
-      <div className="wow fadeInUp rounded-lg bg-white p-8 shadow-testimonial dark:bg-gray-dark lg:px-5 xl:px-8">
+      <div className="wow fadeInUp rounded-lg bg-white p-8 shadow-testimonial  lg:px-5 xl:px-8">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-4">
             <div className="relative h-16 w-16 overflow-hidden rounded-full">
               <Image src={image} alt={name} fill />
             </div>
             <div>
-              <h3 className="text-xl font-semibold text-black dark:text-white">
+              <h3 className="text-xl font-semibold text-black ">
                 {name}
               </h3>
-              <p className="text-sm text-gray-600 dark:text-gray-300">
+              <p className="text-sm text-gray-600 ">
                 {designation}
               </p>
             </div>
@@ -37,7 +37,7 @@ const SingleTestimonial = ({ testimonial }: { testimonial: Testimonial }) => {
           ))}
         </div>
 
-        <p className="mt-5 text-base leading-relaxed text-gray-dark dark:text-gray-300">
+        <p className="mt-5 text-base leading-relaxed text-gray-600">
           &ldquo;{content}&rdquo;
         </p>
       </div>
