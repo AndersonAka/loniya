@@ -3,7 +3,7 @@ import SectionTitle from "../components/Common/SectionTitle";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-    title: "Contact | Loniya Cybersécurité",
+    title: "Contact | Ibelio-Cyber",
     description: "Contactez nos experts en cybersécurité pour sécuriser votre entreprise",
 };
 
